@@ -62,6 +62,10 @@ img {
   border-radius: 50%;
 }
 
+.icon-link:hover{
+  background-color: var(--acent-color);
+}
+
 body {
   background-color: var(--white-color);
   font-family: Roboto, sans-serif;
