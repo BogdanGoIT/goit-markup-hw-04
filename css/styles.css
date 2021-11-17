@@ -65,17 +65,55 @@ outline: 1px solid tomato;
 align-items: center;
 }
 
-.link.befor::before{
+.nav-contacts .item .link::before{
   content: "";
   width: 16px;
   height: 12px;
   margin-right: 10px;
   
-  background-image: url(../images/envelope.svg);
+ 
   background-size: contain;
   background-repeat: no-repeat;
 }
 
+.icon-envel::before{
+   background-image: url(../images/envelope.svg); 
+}
+
+.icon-phone::before{
+  background-image: url(../images/smartphone.svg); 
+}
+
+
+.feature-list::before{
+    content: '';
+  height: 120px;
+  
+  display: block;
+  outline: 1px solid tomato;
+  /* background-image: url(../images/svg/antenna\ 1.svg); */
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  background-position: center;
+  background-color: #F5F4FA;
+}
+
+/* Первый элимент с класом .feature-list в его коллекции, после чего у него :before возьми*/
+.feature-list:nth-child(1)::before{
+  background-image: url(../images/svg/antenna\ 1.svg);
+}
+
+.feature-list:nth-child(2)::before{
+  background-image: url(../images/svg/clock\ 1.svg);
+}
+
+.feature-list:nth-child(3)::before{
+  background-image: url(../images/svg/astronaut\ 1.svg);
+}
+
+.feature-list:nth-child(4)::before{
+  background-image: url(../images/svg/diagram\ 1.svg);
+}
 
 /* .link > .icon{
   width: 20px;
@@ -230,6 +268,7 @@ align-items: center;
 .feature-list {
   width: 270px;
   margin-left: 30px;
+  
 }
 
 .feature-list:first-child {
