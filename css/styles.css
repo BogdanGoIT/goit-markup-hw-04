@@ -48,8 +48,25 @@ img {
 }
 
 /* тело */
+.icon-svg {
+  width: 70px;
+  height: 70px;
+  color: green;
+}
 
-.icon-link{
+.icon-svg:hover {
+  color: blue;
+}
+
+.icon-svg .letter {
+  fill: currentColor;
+}
+
+.icon-svg .background {
+  fill: currentColor;
+}
+
+.icon-link {
   display: inline-block;
   height: 44px;
   width: 44px;
@@ -62,7 +79,7 @@ img {
   border-radius: 50%;
 }
 
-.icon-link:hover{
+.icon-link:hover {
   background-color: var(--acent-color);
 }
 
@@ -76,59 +93,57 @@ body {
 
 /* header */
 
-.item .link{
+.item .link {
   display: inline-flex;
-outline: 1px solid tomato;
-align-items: center;
+  outline: 1px solid tomato;
+  align-items: center;
 }
 
-.nav-contacts .item .link::before{
-  content: "";
+.nav-contacts .item .link::before {
+  content: '';
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  
- 
+
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.icon-envel::before{
-   background-image: url(../images/envelope.svg); 
+.icon-envel::before {
+  background-image: url(../images/envelope.svg);
 }
 
-.icon-phone::before{
-  background-image: url(../images/smartphone.svg); 
+.icon-phone::before {
+  background-image: url(../images/smartphone.svg);
 }
 
-
-.feature-list::before{
-    content: '';
+.feature-list::before {
+  content: '';
   height: 120px;
-  
+
   display: block;
   outline: 1px solid tomato;
   /* background-image: url(../images/svg/antenna\ 1.svg); */
   background-repeat: no-repeat;
   margin-bottom: 30px;
   background-position: center;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
 /* Первый элимент с класом .feature-list в его коллекции, после чего у него :before возьми*/
-.feature-list:nth-child(1)::before{
+.feature-list:nth-child(1)::before {
   background-image: url(../images/svg/antenna\ 1.svg);
 }
 
-.feature-list:nth-child(2)::before{
+.feature-list:nth-child(2)::before {
   background-image: url(../images/svg/clock\ 1.svg);
 }
 
-.feature-list:nth-child(3)::before{
+.feature-list:nth-child(3)::before {
   background-image: url(../images/svg/astronaut\ 1.svg);
 }
 
-.feature-list:nth-child(4)::before{
+.feature-list:nth-child(4)::before {
   background-image: url(../images/svg/diagram\ 1.svg);
 }
 
@@ -155,7 +170,7 @@ align-items: center;
 }
 
 .cont-header,
-.nav{
+.nav {
   display: flex;
   align-items: center;
 }
@@ -234,13 +249,10 @@ align-items: center;
 .hero {
   text-align: center;
 
-   background-color: var(--secondary-color-fon);
-  background-image: linear-gradient(
-    to right, 
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4) 
-  ), url(../images/hero.jpg);
-  
+  background-color: var(--secondary-color-fon);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+
   max-width: 1600px;
   height: 600px;
   outline: 1px solid tomato;
@@ -285,7 +297,6 @@ align-items: center;
 .feature-list {
   width: 270px;
   margin-left: 30px;
-  
 }
 
 .feature-list:first-child {
