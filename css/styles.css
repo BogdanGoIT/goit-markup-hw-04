@@ -58,58 +58,6 @@ body {
 }
 
 /* header */
-.action {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  outline: 1px solid teal;
-  list-style: none;
-}
-
-.button {
-  padding: 0;
-  border: none;
-  background-color: yellow;
-  color: #757575;
-
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-}
-
-.button:hover {
-  color: #2196f3;
-}
-
-.icon-button {
-  width: 40px;
-  height: 40px;
-  fill: currentColor;
-}
-
-.item .link {
-  display: inline-flex;
-  outline: 1px solid tomato;
-  align-items: center;
-}
-
-.nav-contacts .item .link::before {
-  content: '';
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.icon-envel::before {
-  background-image: url(../images/envelope.svg);
-}
-
-.icon-phone::before {
-  background-image: url(../images/smartphone.svg);
-}
 
 .feature-list::before {
   content: '';
@@ -140,16 +88,6 @@ body {
 .feature-list:nth-child(4)::before {
   background-image: url(../images/svg/diagram\ 1.svg);
 }
-
-/* .link > .icon{
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  outline: 1px solid red;
-    background-color: red;
-    background-image: url(../images/boxes.jpg);
-    background-size: contain;
-} */
 
 .header {
   border-bottom: 1px solid #ececec;
@@ -196,8 +134,7 @@ body {
   margin-left: 93px;
 }
 
-.site-nav .item:nth-child(n + 2),
-.nav-contacts .item:nth-child(n + 2) {
+.site-nav .item:nth-child(n + 2) {
   margin-left: 50px;
 }
 
@@ -205,11 +142,6 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
-}
-
-.nav-contacts {
-  display: flex;
-  margin-left: auto;
 }
 
 .site-nav .link,
@@ -233,9 +165,29 @@ body {
 }
 
 /* nav contacts */
+.nav-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.item .link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon-button {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
 
 .nav-contacts .link {
   color: var(--secondary-color);
+}
+
+.nav-contacts .item:nth-child(n + 2) {
+  margin-left: 30px;
 }
 
 /* HERO */
@@ -248,8 +200,6 @@ body {
     url(../images/hero.jpg);
 
   max-width: 1600px;
-  height: 600px;
-  outline: 1px solid tomato;
 
   margin: 0 auto;
   padding-top: 200px;
