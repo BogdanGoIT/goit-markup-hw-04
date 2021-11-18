@@ -51,19 +51,14 @@ img {
 .icon-svg {
   width: 70px;
   height: 70px;
-  color: green;
 }
 
-.icon-svg:hover {
-  color: blue;
+.icon-svg:hover .background {
+  fill: blue;
 }
 
-.icon-svg .letter {
-  fill: currentColor;
-}
-
-.icon-svg .background {
-  fill: currentColor;
+.icon-svg:hover .letter {
+  fill: red;
 }
 
 .icon-link {
