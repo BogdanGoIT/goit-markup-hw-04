@@ -59,21 +59,20 @@ body {
 
 /* header */
 
-.feature-list::before {
+/* .feature-list::before {
   content: '';
   height: 120px;
 
   display: block;
   outline: 1px solid tomato;
-  /* background-image: url(../images/svg/antenna\ 1.svg); */
   background-repeat: no-repeat;
   margin-bottom: 30px;
   background-position: center;
   background-color: #f5f4fa;
-}
+} */
 
 /* Первый элимент с класом .feature-list в его коллекции, после чего у него :before возьми*/
-.feature-list:nth-child(1)::before {
+/* .feature-list:nth-child(1)::before {
   background-image: url(../images/svg/antenna\ 1.svg);
 }
 
@@ -87,7 +86,7 @@ body {
 
 .feature-list:nth-child(4)::before {
   background-image: url(../images/svg/diagram\ 1.svg);
-}
+} */
 
 .header {
   border-bottom: 1px solid #ececec;
@@ -245,6 +244,22 @@ body {
 
 .feature-list:first-child {
   margin-left: 0;
+}
+
+.icon-feature {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid red;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.svg-feature {
+  width: 70px;
+  height: 70px;
 }
 
 .feature-title {
