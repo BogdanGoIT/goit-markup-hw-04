@@ -59,35 +59,6 @@ body {
 
 /* header */
 
-/* .feature-list::before {
-  content: '';
-  height: 120px;
-
-  display: block;
-  outline: 1px solid tomato;
-  background-repeat: no-repeat;
-  margin-bottom: 30px;
-  background-position: center;
-  background-color: #f5f4fa;
-} */
-
-/* Первый элимент с класом .feature-list в его коллекции, после чего у него :before возьми*/
-/* .feature-list:nth-child(1)::before {
-  background-image: url(../images/svg/antenna\ 1.svg);
-}
-
-.feature-list:nth-child(2)::before {
-  background-image: url(../images/svg/clock\ 1.svg);
-}
-
-.feature-list:nth-child(3)::before {
-  background-image: url(../images/svg/astronaut\ 1.svg);
-}
-
-.feature-list:nth-child(4)::before {
-  background-image: url(../images/svg/diagram\ 1.svg);
-} */
-
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -98,6 +69,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 1px solid red;
 }
 
 .cont-header,
@@ -372,6 +344,48 @@ body {
   width: 20px;
   height: 20px;
 }
+
+/* Постоянные клиенты */
+.clients-reg {
+  height: 184px;
+}
+
+.clients-title {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+
+  fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--acent-color);
+  border: 1px solid var(--acent-color);
+}
+
 /* FOOTER */
 
 .footer {
@@ -462,7 +476,7 @@ body {
 
 /* Контент */
 
-.section .container {
+.cont-portfolio {
   padding-left: 0;
   padding-right: 0;
 }
