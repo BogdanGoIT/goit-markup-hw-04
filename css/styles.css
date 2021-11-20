@@ -307,7 +307,7 @@ body {
 
 .cmd-cont {
   padding-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .work-title,
@@ -334,6 +334,44 @@ body {
   font-weight: 400;
 }
 
+.cmd-item {
+  width: 206px;
+  height: 44px;
+  outline: 1px solid tomato;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.cmd-list {
+  outline: 1px solid tomato;
+}
+
+.cmd-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid tomato;
+  fill: #afb1b8;
+  border-radius: 50%;
+}
+
+.cmd-link:hover,
+.cmd-link:focus {
+  fill: var(--white-color);
+  background-color: var(--acent-color);
+}
+
+.cmd-list + .cmd-list {
+  margin-left: 10px;
+}
+
+.cmd-icon {
+  width: 20px;
+  height: 20px;
+}
 /* FOOTER */
 
 .footer {
