@@ -331,6 +331,8 @@ body {
 }
 
 .cmd-link:hover,
+.cmd-link.join:hover,
+.cmd-link.join:focus,
 .cmd-link:focus {
   fill: var(--white-color);
   background-color: var(--acent-color);
@@ -424,6 +426,37 @@ body {
 .footer-addr:hover,
 .footer-addr:focus {
   color: var(--acent-color);
+}
+
+.foot-cont {
+  display: flex;
+  align-items: baseline;
+}
+
+/* присоиденяйтесь */
+
+.join-container {
+  width: 206px;
+  height: 80px;
+  outline: 1px solid red;
+  margin-left: 70px;
+}
+
+.join-item {
+  display: flex;
+}
+
+.join-title {
+  margin-bottom: 20px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+
+.cmd-link.join {
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--white-color);
 }
 
 /* Portfolio */
